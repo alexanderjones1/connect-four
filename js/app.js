@@ -150,3 +150,7 @@ function handleClick(evt) {
     render()
 }
 
+function placePiece(idx) {
+    board[idx] = turn
+}
+
