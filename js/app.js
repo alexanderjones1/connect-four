@@ -81,6 +81,7 @@ let board, turn, winner, tie
 
 const circleEls = document.querySelectorAll('.cir')
 const messageEl = document.getElementById('message')
+const resetBtnEl = document.getElementById('reset')
 
 
 // const col1 = document.getElementById('col1')
@@ -97,7 +98,7 @@ const messageEl = document.getElementById('message')
 
 document.querySelector('.board').addEventListener('click', handleClick)
 
-
+resetBtnEl.addEventListener('click', init)
 /*-------------------------------- Functions --------------------------------*/
 
 init()
@@ -154,3 +155,24 @@ function placePiece(idx) {
     board[idx] = turn
 }
 
+function checkForTie() {
+    if (board.includes(null)) return
+    tie = true
+}
+
+function checkForWinner() {
+    winningCombos.forEach(function(arr) {
+        let sum = 0
+        arr.forEach(function(idx) {
+            sum += board[idx]
+        })
+        if (sum === 4 || sum === -4) {
+            winner = true
+        }
+    })
+}
+
+
+function switchPlayerTurn() {
+    if (!winner) turn *= -1
+}
