@@ -79,7 +79,7 @@ let board, turn, winner, tie
 
 /*------------------------ Cached Element References ------------------------*/
 
-const circleEls = document.querySelectorAll('.cir')
+const circleEls = document.querySelectorAll('.circle')
 const messageEl = document.getElementById('message')
 const resetBtnEl = document.getElementById('reset')
 
@@ -118,19 +118,17 @@ function updateBoard() {
 
 function updateMessage() {
     if (winner === false && tie === false) {
-        messageEl.textContent = (turn === 1 ? 'Player X turn.' : 'Player O turn.')
+        messageEl.textContent = (turn === 1 ? 'Player 1 turn: 🔴' : 'Player 2 turn: 🔵')
     } else if (winner === false && tie === true) {
         messageEl.textContent = "You Tied!"
     } else {
-        messageEl.textContent = (turn === 1 ? 'Player X Wins!' : 'Player O Wins!')
+        messageEl.textContent = (turn === 1 ? 'Player 1 Wins! 🔴' : 'Player 2 Wins! 🔵')
     }
 }
 
 function handleClick(evt) {
     let sqIdx = +evt.target.id.replace('cir', '')
-    if (board[sqIdx] !== null) {
-        return
-    } else if (winner === true) {
+    if (winner === true) {
         return
     }
     placePiece(sqIdx)
@@ -147,7 +145,6 @@ function placePiece(idx) {
         }
     }
 }
-
 
 function checkForTie() {
     if (board.includes(null)) return
