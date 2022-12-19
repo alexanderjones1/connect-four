@@ -152,8 +152,20 @@ function handleClick(evt) {
 }
 
 function placePiece(idx) {
-    board[idx] = turn
+    console.log(idx + 35);
+    //create for loop
+    for (let i = (idx + 35); i > -1; i-=7) {
+        if (board[i] === null) {
+            return board[i] = turn
+        }
+    }
 }
+
+
+// function placePiece(idx) {
+//     console.log(idx);
+//     board[idx] = turn
+// }
 
 function checkForTie() {
     if (board.includes(null)) return
