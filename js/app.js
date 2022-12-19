@@ -83,17 +83,6 @@ const circleEls = document.querySelectorAll('.cir')
 const messageEl = document.getElementById('message')
 const resetBtnEl = document.getElementById('reset')
 
-
-// const col1 = document.getElementById('col1')
-// const col2 = document.getElementById('col2')
-// const col3 = document.getElementById('col3')
-// const col4 = document.getElementById('col4')
-// const col5 = document.getElementById('col5')
-// const col6 = document.getElementById('col6')
-// const col7 = document.getElementById('col7')
-
-
-
 /*----------------------------- Event Listeners -----------------------------*/
 
 document.querySelector('.board').addEventListener('click', handleClick)
@@ -152,8 +141,6 @@ function handleClick(evt) {
 }
 
 function placePiece(idx) {
-    console.log(idx + 35);
-    //create for loop
     for (let i = (idx + 35); i > -1; i-=7) {
         if (board[i] === null) {
             return board[i] = turn
@@ -161,11 +148,6 @@ function placePiece(idx) {
     }
 }
 
-
-// function placePiece(idx) {
-//     console.log(idx);
-//     board[idx] = turn
-// }
 
 function checkForTie() {
     if (board.includes(null)) return
