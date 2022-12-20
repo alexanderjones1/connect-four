@@ -137,9 +137,7 @@ function handleClick(evt) {
         checkForWinner()
         switchPlayerTurn()
         render()
-    } else {
-        return
-    }
+    } 
 }
 
 function placePiece(idx) {
