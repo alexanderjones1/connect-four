@@ -28,7 +28,7 @@ div {
     text-align: center;
     vertical-align: middle;
     border: 3px solid rgb(228, 175, 39);
-    border-radius: 50px;
+    border-radius: 50%;
     background-color: lightblue;
     margin: 1px;
 }
