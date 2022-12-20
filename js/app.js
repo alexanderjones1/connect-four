@@ -127,15 +127,19 @@ function updateMessage() {
 }
 
 function handleClick(evt) {
-    let sqIdx = +evt.target.id.replace('cir', '')
-    if (winner === true) {
+    if (evt.target.id.includes('cir')) {
+        let sqIdx = +evt.target.id.replace('cir', '')
+        if (winner === true) {
+            return
+        }
+        placePiece(sqIdx)
+        checkForTie()
+        checkForWinner()
+        switchPlayerTurn()
+        render()
+    } else {
         return
     }
-    placePiece(sqIdx)
-    checkForTie()
-    checkForWinner()
-    switchPlayerTurn()
-    render()
 }
 
 function placePiece(idx) {
