@@ -175,14 +175,6 @@ function switchPlayerTurn() {
 
 function playSound() {
     const audioElement = new Audio(`../assets/click-sound.wav`)
-    audioElement.volume = .1
+    audioElement.volume = .5
     audioElement.play()
 }
-
-// notFoxDiv.addEventListener('click', evt => {
-//     if (evt.target.id !== 'not-fox'){
-//     const audioElement = new Audio(`../audio/${evt.target.id}.mp3`)
-//     audioElement.volume = .05
-//     audioElement.play()
-//     }
-// })
