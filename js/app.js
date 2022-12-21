@@ -138,6 +138,7 @@ function handleClick(evt) {
         checkForTie()
         checkForWinner()
         switchPlayerTurn()
+        playSound()
         render()
     } 
 }
@@ -171,3 +172,17 @@ function checkForWinner() {
 function switchPlayerTurn() {
     if (!winner) turn *= -1
 }
+
+function playSound() {
+    const audioElement = new Audio(`../assets/click-sound.wav`)
+    audioElement.volume = .1
+    audioElement.play()
+}
+
+// notFoxDiv.addEventListener('click', evt => {
+//     if (evt.target.id !== 'not-fox'){
+//     const audioElement = new Audio(`../audio/${evt.target.id}.mp3`)
+//     audioElement.volume = .05
+//     audioElement.play()
+//     }
+// })
