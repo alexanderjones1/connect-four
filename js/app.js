@@ -132,7 +132,9 @@ function handleClick(evt) {
         if (winner === true) {
             return
         }
-        placePiece(sqIdx)
+        const open = placePiece(sqIdx)
+        if (open === undefined) return
+        board[open] = turn
         checkForTie()
         checkForWinner()
         switchPlayerTurn()
@@ -143,7 +145,7 @@ function handleClick(evt) {
 function placePiece(idx) {
     for (let i = (idx + 35); i > -1; i-=7) {
         if (board[i] === null) {
-            return board[i] = turn
+            return i
         }
     }
 }
