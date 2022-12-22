@@ -27,3 +27,5 @@ Connect 4 uses Google Fonts
 - [ ] Add trumpet sound when winner is declared
 - [ ] Add confetti animation when winner is declared
 - [ ] Add animation that shows tokens droping and bouncing
+
+## [Planning Materials](https://docs.google.com/document/d/1HgXmMq4yCpc6FnI1bwQjHE3m_Zd2b0ArZOa8SHFzHac/edit?usp=sharing)
