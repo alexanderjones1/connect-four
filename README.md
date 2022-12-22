@@ -12,8 +12,14 @@ Connect 4 is a game that has been around for generations. Play with familie or c
 
 ## Credits
 
-Connect 4 uses Google Fonts 
+Connect 4 uses:
+Fonts from Google fonts 
 - font-family Barlow @ 700
+Audio elements from freesound.org
+- Coin Jingle.mp3
+- Drip1.wav
+Image from unsplash.com
+- Hayden Scott
 
 ## Recent Updates
 
