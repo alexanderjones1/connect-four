@@ -37,16 +37,6 @@ div {
     margin: 1px;
 }
 
-body > div {
-    display: flex;
-    height: 100px;
-    width: 500px;
-    margin-top: -10px;
-    background-color: rgb(6, 6, 159);
-    border: none;
-    border-radius: 10px;
-}
-
 #reset {
     width: 100px;
     margin-top: 20px;
