@@ -46,6 +46,11 @@ div {
     border-radius: 50%;
     background-color: rgb(207, 136, 4);
     margin: 1px;
+    transition: .5s;
+}
+
+div:hover {
+    scale: 1.1;
 }
 
 #reset {
