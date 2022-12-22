@@ -17,7 +17,8 @@ Connect 4 uses Google Fonts
 
 ## Recent Updates
 
-
+- Add sound on token placement.
+- update function that disallows clicking on column that is filled.
 
 ## Ice Box
 
