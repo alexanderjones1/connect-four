@@ -16,7 +16,7 @@ Connect 4 uses fonts from [Google fonts](https://fonts.google.com/about), audio 
 - font-family Barlow @ 700
 - Coin Jingle.mp3
 - Drip1.wav
-- Hayden Scott
+- Hayden Scott (firewood on fireplace)
 
 ## Recent Updates
 
