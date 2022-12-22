@@ -12,8 +12,17 @@ Connect 4 is a game that has been around for generations. Play with familie or c
 
 ## Credits
 
-- Check out the [Attributions]()
+Connect 4 uses Google Fonts 
+- font-family Barlow @ 700
 
 ## Recent Updates
 
+
+
 ## Ice Box
+
+- [x] Add sound on token placement.
+- [ ] Add sound to reset button.
+- [ ] Add trumpet sound when winner is declared
+- [ ] Add confetti animation when winner is declared
+- [ ] Add animation that shows tokens droping and bouncing
