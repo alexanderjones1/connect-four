@@ -87,7 +87,7 @@ const resetBtnEl = document.getElementById('reset')
 
 document.querySelector('.board').addEventListener('click', handleClick)
 
-resetBtnEl.addEventListener('click', init)
+resetBtnEl.addEventListener('click', coinJingle)
 /*-------------------------------- Functions --------------------------------*/
 
 init()
@@ -179,4 +179,9 @@ function playSound() {
     audioElement.play()
 }
 
-
+function coinJingle() {
+    const audioElement = new Audio(`../assets/coin-jingle.mp3`)
+    audioElement.volume = .5
+    audioElement.play()
+    init()
+}
