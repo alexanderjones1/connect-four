@@ -1,14 +1,16 @@
 body {
-    background-color: lightblue;
-	/* Use a system font, if none are available use an available sans-sarif   font */
-	font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
-		Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
-	margin: 0;
-    height: 100vh;
+    background-image: url(../assets/fireplace.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
+    height: 50vh;
+    margin-top: 200px;
+    margin-bottom: 100px;
 }
 
 section.board {
@@ -16,14 +18,23 @@ section.board {
     grid-template-rows: repeat(6, 10vmin);
     grid-template-columns: repeat(7, 10vmin);
     grid-gap: 0vmin;
-    border: 3px solid gray;
+    border: 3px solid rgb(207, 136, 4);
     border-radius: 20px;
     background-color: rgb(215, 215, 9);
     padding: 8px;
 }
 
-h1 h2 {
+.animate__bounce, #message {
     font-family: 'Barlow', sans-serif;
+    color: white;
+    padding: 10px;
+    background-color: black;
+    border-radius: 8px;
+    opacity: 70%;
+}
+
+#message {
+    margin-top: -15px;
 }
 
 div {
@@ -33,7 +44,7 @@ div {
     vertical-align: middle;
     border: 3px solid rgb(228, 175, 39);
     border-radius: 50%;
-    background-color: lightblue;
+    background-color: rgb(207, 136, 4);
     margin: 1px;
 }
 
