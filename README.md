@@ -10,24 +10,25 @@ Connect _Four_ is a strategy game that has been around for generations. Player o
 - HTML
 - git
 
-## Credits
+## Credits 🎬
 
 Connect _Four_ uses fonts from [Google fonts](https://fonts.google.com/about), audio elements from [freesound.org](https://freesound.org/), and an image from [unsplash.com](https://unsplash.com/)
 - font-family Barlow @ 700
 - Coin Jingle.mp3
 - Drip1.wav
+- Trumpet2.wav
 - Hayden Scott (firewood on fireplace)
 
-## Recent Updates
+## Recent Updates 🛠️
 
 - Add sound to token placement
 - Update function that disallows clicking in full columns
 
-## Ice Box
+## Ice Box 🥶
 
 - [x] Add sound on token placement
 - [x] Add sound to reset button
-- [ ] Add trumpet sound when winner is declared
+- [x] Add trumpet sound when winner is declared
 - [ ] Add confetti animation when winner is declared
 - [ ] Add animation that shows tokens dropping and bouncing
 

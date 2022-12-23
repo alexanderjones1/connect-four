@@ -71,7 +71,6 @@ const winningCombos = [
     [3, 9, 15, 21]
 ]
 
-
 /*---------------------------- Variables (state) ----------------------------*/
 
 let board, turn, winner, tie
@@ -169,7 +168,6 @@ function checkForWinner() {
     })
 }
 
-
 function switchPlayerTurn() {
     if (!winner) turn *= -1
 }
@@ -186,4 +184,3 @@ function coinJingle() {
     audioElement.play()
     init()
 }
-
