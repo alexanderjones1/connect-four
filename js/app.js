@@ -82,11 +82,11 @@ let board, turn, winner, tie
 const circleEls = document.querySelectorAll('.circle')
 const messageEl = document.getElementById('message')
 const resetBtnEl = document.getElementById('reset')
+const winningSound = new Audio(`../assets/winning-trumpet.wav`)
 
 /*----------------------------- Event Listeners -----------------------------*/
 
 document.querySelector('.board').addEventListener('click', handleClick)
-
 resetBtnEl.addEventListener('click', coinJingle)
 /*-------------------------------- Functions --------------------------------*/
 
@@ -123,6 +123,7 @@ function updateMessage() {
         messageEl.textContent = "You Tied!"
     } else {
         messageEl.textContent = (turn === 1 ? 'Player 1 Wins! 🔴' : 'Player 2 Wins! 🔵')
+        winningSound.play()
     }
 }
 
@@ -185,3 +186,4 @@ function coinJingle() {
     audioElement.play()
     init()
 }
+
