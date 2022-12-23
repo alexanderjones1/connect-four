@@ -1,7 +1,7 @@
 # **Connect _Four_!**
 ![A picture of the game](/assets/game-pic1.png)
 ## [Play the game here!](https://alexanderjones1connect4.netlify.app)
-Connect 4 is a game that has been around for generations. Play with familie or close friends. Player One will have red tokens and player Two will have blue tokens. The first player to place 4 tokens together in a row, column or horizontally will be declared the winner! If neither player is able to place 4 in a row and all the placeholders are taken, the game is declared a tie. After the game competes and a winner or tie is declared, you can reset the board with the reset button at the bottom.  This game offers a classic game board with a simple, cluster free background. 
+Connect _Four_ is a strategy game that has been around for generations. Player one will have red tokens and player two will have blue tokens. The first player to place 4 tokens together in a row, column or horizontally will be declared winner! If neither player is able to place 4 in a row and all the placeholders are taken, the game is declared a tie. After the game has ended, and a winner or a tie is declared, you can reset the board by clicking the reset button located at the bottom.
 
 ## Technologies used 💻
 
@@ -12,7 +12,7 @@ Connect 4 is a game that has been around for generations. Play with familie or c
 
 ## Credits
 
-Connect 4 uses fonts from [Google fonts](https://fonts.google.com/about), audio elements from [freesound.org](https://freesound.org/) and an image from [unsplash.com](https://unsplash.com/)
+Connect _Four_ uses fonts from [Google fonts](https://fonts.google.com/about), audio elements from [freesound.org](https://freesound.org/) and an image from [unsplash.com](https://unsplash.com/)
 - font-family Barlow @ 700
 - Coin Jingle.mp3
 - Drip1.wav
@@ -25,8 +25,8 @@ Connect 4 uses fonts from [Google fonts](https://fonts.google.com/about), audio 
 
 ## Ice Box
 
-- [x] Add sound on token placement.
-- [ ] Add sound to reset button.
+- [x] Add sound on token placement
+- [x] Add sound to reset button
 - [ ] Add trumpet sound when winner is declared
 - [ ] Add confetti animation when winner is declared
 - [ ] Add animation that shows tokens droping and bouncing
